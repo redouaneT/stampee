@@ -1,0 +1,147 @@
+@import "./componants/header.css";
+@import "./componants/button.css";
+@import "./componants/presentation-grid.css";
+@import "./componants/card.css";
+@import "./componants/newsletter.css";
+@import "./componants/footer.css";
+@import "./componants/fiche.css";
+
+:root{
+    --main-color: #1F324D;
+    --link-default-color : #000000;
+    --bg-btn-first : #de6262c4;
+    --bg-btn-first-hover : #cf4343c4;
+    --text-color-btn-first : #ffffff;
+    --text-color-btn-first-hover : #ffffff;
+    --bg-btn-second : #1F324D;
+    --bg-btn-second-hover : #464f5a;
+    --text-color-btn-second : #ffffff;
+    --text-color-btn-second-hover : #ffffff;
+    --bg-drop-down-menu : #1F324D;
+    --large-screen : 1440px;
+    --general-padding :  calc((100vw - var(--large-screen))/2);
+}
+
+@media only screen and (max-width: 1400px) {
+    :root{
+        --large-screen : 1025px;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--link-default-color);
+    font-weight: 400;
+}
+
+a:hover, a:active{
+    color: #b6b6b6;
+    text-decoration: underline;
+}
+
+p {
+    margin-top: 1rem;
+    line-height: 1.66;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Frank Ruhl Libre', serif;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 4.768rem;
+    line-height: 0.92;
+    font-weight: 600;
+  }
+h2 {
+    font-size: 3.052rem;
+    line-height: 1.12;
+}
+h3 {
+    font-size: 2.441rem;
+    line-height: 1.18;
+    font-weight: 500;
+}
+   
+h4 {font-size: 1.953rem;}
+
+h5 {font-size: 1.563rem;}
+  
+/* h5 {font-size: 1.25rem;} */
+  
+small, .text_small {font-size: 0.8rem;}
+
+.hero-slogan{
+    font-size:  1.25rem;
+    line-height: 1.4;
+}
+
+
+/* Liens hyperbolique  */
+
+/* Couleur de tout les liens de l’entête de page  */
+
+.header a, .header .dropdown {
+    color: rgb(231, 231, 231);
+}
+
+.secondary-navigation{
+    font-size: 12px;
+}
+
+/* Entête de page  */
+.header{
+    background-color: #253956;
+}
+.top-bar{
+    background-color: rgb(0, 0, 0);
+}
+.header nav{
+    background-color:#1F324D;
+}
+
+/* Rythme graphique */
+
+h1+*, h3+*, p+*, strong+*{
+    margin-top: 1.6rem;
+}
+
+*+.btn {
+    margin-top: 1.6rem;
+}
+
+/* Sections */
+
+section{
+    padding: 4.6rem var( --general-padding);
+}
+section h2{
+    font-weight: 600;
+    color: #253956;
+}
+section > header{
+    margin-bottom: 3.2rem;
+}
+section > footer{
+    margin-top: 3.2rem;
+}
+.subscription, .owner-presentation{
+    background-color: #de6262;
+}

@@ -1,0 +1,47 @@
+.feature{
+    background-color:#253956;
+    padding: 4.6rem var(  --general-padding);
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-flow: column;
+    gap: 4.8rem;
+}
+.feature h2{
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+}
+.feature strong{
+    color: #c46767d4;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.feature p{
+    color: rgba(255, 255, 255, 0.8);
+
+}
+.feature ion-icon{
+    color: #C46767;
+    font-size: 56px;
+    margin-bottom: 1.6rem;
+}
+
+.feature-presentation{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+.feature-presentation p{
+   max-width: 75ch;
+   text-align: center;
+}
+
+.feature-description{
+    display: flex;
+}
+.feature-item{
+    flex: 1;
+}
+.feature-item p{
+max-width: 35ch;
+}

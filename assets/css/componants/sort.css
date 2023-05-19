@@ -1,0 +1,30 @@
+.sort-panel{
+    background-color: #EAF0FA;
+    padding: 1.6rem;
+    display: flex;
+    align-items: center;
+    gap: 4.6rem;
+    margin: 0;
+    border-radius: 8px;
+}
+.sort-panel > span{
+    border-right: 2px solid #de6262c4;
+    padding-right: 1.6rem;
+}
+.sort-panel  select{
+    padding: 0.4rem 0.1rem;
+}
+.sort-panel  .sort{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.sort-panel  .order{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.sort-panel  .order > *{
+   margin: 0;
+}
+

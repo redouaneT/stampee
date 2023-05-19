@@ -1,0 +1,31 @@
+:root {
+	--cta-text-color: #1f324dd4;
+	--cta-headline-color: rgb(255, 255, 255);
+	--cta-desc-color: rgba(255, 255, 255, 0.868);
+}
+
+.call-to-action {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.call-to-action strong {
+	color: var(--cta-text-color);
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.call-to-action h2 {
+	max-width: 35ch;
+	text-align: center;
+	color: var(--cta-headline-color);
+	font-weight: 400;
+}
+
+.call-to-action p {
+	max-width: 75ch;
+	text-align: center;
+	color: var(--cta-desc-color);
+}

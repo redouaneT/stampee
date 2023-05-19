@@ -1,0 +1,74 @@
+:root {
+	--btn-blue: #7f9dfd;
+	--btn-text-color: white;
+	--btn-first: #4a90e2;
+	--btn-first-text-color: white;
+	--btn-first-hover: #4a4ae2;
+	--btn-first-hover-text-color: white;
+	--btn-second: #7f9dfd;
+	--btn-second-text-color: white;
+	--btn-second-hover: #7f3dfd;
+	--btn-second-hover-text-color: white;
+}
+
+.btn {
+	background-color: var(--btn-blue);
+	color: var(--btn-text-color);
+	border-radius: 6px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.btn:hover {
+	text-decoration: none;
+	color: white;
+}
+
+.btn-first-color {
+	background-color: var(--btn-first);
+	color: var(--btn-first-text-color);
+}
+
+.btn-first-color:hover {
+	background-color: var(--btn-first-hover);
+	color: var(--btn-first-hover-text-color);
+}
+
+.btn-second-color {
+	background-color: var(--btn-second);
+	color: var(--btn-second-text-color);
+}
+
+.btn-second-color:hover {
+	background-color: var(--btn-second-hover);
+	color: var(--btn-second-hover-text-color);
+}
+
+.btn-large {
+	padding: 0.8rem 2.2rem;
+}
+
+.btn-small {
+	padding: 0.2rem 1.2rem;
+}
+
+.btn-medium {
+	padding: 0.6rem 1.8rem;
+}
+
+.btn-link {
+	max-width: max-content;
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.btn-link > a {
+	color: var(--btn-first);
+	text-decoration: underline;
+}
+
+.btn-link > ion-icon {
+	font-size: 1.6rem;
+	color: var(--btn-first);
+}

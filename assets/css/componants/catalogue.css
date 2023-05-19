@@ -1,0 +1,35 @@
+.catalogue{
+    display: grid;
+	grid-template-columns: auto;
+	grid-template-areas:
+		"aside header"
+		"aside content"
+		"aside footer";
+    margin-bottom: 6.2rem;
+}
+
+.filter-panel {
+	grid-area: aside;
+}
+
+.sort-panel {
+	grid-area: header;
+}
+
+.catalogue-content {
+	grid-area: content;
+}
+
+.catalogue footer {
+	grid-area: footer;
+    display: flex;
+    flex-flow: column;
+}
+.catalogue footer button {
+	border: none;
+    margin-bottom: 1.6rem;
+}
+.catalogue footer > div:nth-child(2) {
+	background-color:#EAF0FA;
+    padding: 1.6rem;
+}

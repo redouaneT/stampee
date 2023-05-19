@@ -1,0 +1,47 @@
+.text-with-image{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 7.6rem;
+    padding-bottom:9.6rem;
+}
+.text-with-image h2{
+   color:#de6262c4 ;
+   max-width: 15ch;
+
+}
+.text-with-image p{
+   max-width: 65ch;
+   color: rgba(255, 255, 255, 0.877);
+}
+.text-with-image > *{
+   flex: 1;
+   /* max-width: 35vw; */
+}
+.text-with-image > figure{
+   position: relative;
+   overflow: hidden;
+   min-height: 55vh;
+   width: auto;
+}
+.text-with-image  img{
+    position: absolute;
+   width: 100%;
+   height: 100%;
+   inset: 0;
+   object-fit: cover;
+   border-radius: 8px;
+}
+.text-with-image > div > div{
+    position: absolute;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    background-color: #1F324D;
+    left: calc(100vw/2 - 75px);
+    top: 20vh;
+    bottom: 25vh;
+    padding: 3.6rem;
+    z-index: 999;
+    border-radius: 8px;
+}

@@ -1,0 +1,112 @@
+.header > *{
+    padding: 0 var(  --general-padding);
+}
+.header .logo img{
+    width: 18rem;
+    height: auto;
+}
+
+/* Bloc du milieu de l’entête de page */
+.header > div:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom:24px ;
+}
+
+/* Menu avec icons */
+.menu{
+    display: flex;
+    gap: 24px;
+}
+.menu > *{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+.menu  ion-icon {
+    font-size: 38px;
+    stroke: 1px;
+    color: #E47878;
+}
+
+/* Champ de recherche */
+
+.search-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.search-box label{
+    display: none;
+}
+.search-box > input{
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(255, 255, 255);
+    padding: 12px;
+    min-width: 15rem;
+    border: 1px solid #E47878;
+    border-radius: 8px;
+}
+.search-box > ion-icon {
+    font-size: 30px;
+    stroke: 1px;
+    color: #E47878;
+    transform: rotate(90deg);
+    position: absolute;
+    right: 24px;
+}
+
+/* navigation principale et Bare de navigation secondaire */
+nav, .secondary-navigation{
+    display: flex;
+    gap: 24px;
+}
+
+/* Bare de navigation principale */
+.header nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+}
+
+/* Cacher le menu déroulant et ne le révéler qu’après un survole */
+.dropdown{
+    position: relative;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    cursor: pointer;
+
+}
+.dropdown > ion-icon{
+    font-size: 20px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    display: none;
+    flex-flow: column;
+    gap: 12px;
+    padding: 24px;
+    background-color: var(--bg-drop-down-menu);
+    z-index: 1;
+    top: 100%;
+}
+.dropdown-menu a {
+    display: inline-block;
+    min-width: max-content;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: flex;
+}
+
+.dropdown:hover > ion-icon{
+    transform: rotate(180deg);
+    transition: 0.3s ease-in;
+}
